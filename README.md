@@ -1,5 +1,34 @@
 # Segmentacion_imagenes
 Pipeline completo para segmentación binaria Permeable / No permeable sobre ortofotos PNOA usando PyTorch, TorchGeo y Segmentation Models PyTorch (SMP). Incluye datasets, transforms, entrenamiento, búsqueda de hiperparámetros (Optuna/Hyperopt), y exportación a SHP desde predicciones raster.
+
+
+📂 Datos
+El proyecto utiliza una estructura estándar de directorios para organizar insumos y datos procesados:
+
+INSUMOS/   # Archivos de entrada (ortofotos, vectores, etc.)
+
+DATA/      # Datos procesados y salidas de modelos
+
+🔗 Opción 1: Datos ya organizados en Google Drive
+
+Puedes acceder directamente a la estructura completa (INSUMOS y DATA) en el siguiente enlace:
+
+👉 https://drive.google.com/drive/folders/1bAoQoRNwwrQ80NHqpTCJstQLO003U4NS
+
+
+🔗 Opción 2: Descarga desde fuentes oficiales
+
+Si prefieres armar la estructura desde cero:
+
+* Ortofotos PNOA → disponibles en la web oficial del Instituto Geográfico Nacional:
+
+      https://pnoa.ign.es/pnoa-imagen/productos-a-descarga
+
+* Datos de cobertura del suelo SIOSE → descargables desde el Centro de Descargas del CNIG:
+
+      https://centrodedescargas.cnig.es/CentroDescargas/siose
+
+
 🧩 Estructura (scripts clave)
 
 * datasets.py – Datasets TorchGeo para imágenes y etiquetas (mask TIFF).
