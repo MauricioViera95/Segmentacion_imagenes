@@ -91,7 +91,7 @@ Luego abrir http://localhost:6006. (Los scripts llaman a SummaryWriter y registr
   * Configurar arquitectura (UNet, UNet++, FPN, DeepLabV3(+), etc.), backbone y loss desde el script.
   * Se aplican transforms (flip + normalize en train; normalize en val/test). 
   * Guardar el mejor checkpoint y registra métricas/figuras. 
-2) Receta DeepLabV3+ + MiT-B4 (lista para ejecutar)
+2) Código DeepLabV3+ + MiT-B4 (lista para ejecutar)
     python CNN_deeplabv3plus_mitb4_v3.py
     * Hiperparámetros establecidos (p. ej., EPOCHS, LR, BATCH_SIZE, GRAD_ACCUM_STEPS, PATIENCE, SCHED_FACTOR, LOSS=focal+dice o CE+Dice).
     * AMP + acumulación de gradientes para batch efectivo mayor y entrenamiento estable.
